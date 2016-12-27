@@ -1,0 +1,103 @@
+<html>
+
+ <head>
+   <link type="text/css" rel="stylesheet" href="main.css"/>
+   <title> Minecraft Facts </title>
+  
+  <script>
+   function banner(){ 
+var text = confirm("Did You Really Want to Click on My Banner?"); 
+return text; 
+}
+
+     function answer(){
+      var radio = document.getElementsByName("trivia"); 
+var selection = false; 
+var message = "";
+for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "y" && radio[i].checked == true) { 
+selection = true; 
+     }//end if statement
+    }//end for loop
+
+    if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+    }//end function answer
+  </script>
+
+    <body>
+
+      <a href="http://bing.com" onclick="return banner()">
+       <header id="header"> Are you enjoying my website so far? </header>
+      </a>
+
+         <nav>
+
+          <ul id="navmenu">
+
+            <li class="navitem"> <a href="home.html"> Home </a> </li>
+            <li class="navitem"> <a href="games.html"> </a> Games </li>
+            <li class="navitem"> <a href="videos.html"> Videos </a> </li>
+            
+          </ul>
+
+         </nav>
+
+     <center><u><h1> Minecraft Facts </h1></u></center>
+
+      <p><h3> What is up the WORLD. Below you'll see a image and that image is what the website is all about. Plz enjoy. </h3></p>
+        <a href="https://www.google.co.za/search?q=minecraft&rlz=1C1MSIM_enZA659ZA659&source=lnms&tbm=isch&sa=X&ved=0ahUKEwib7Im88vrQAhXXFsAKHVQoCi8Q_AUICSgC&biw=1366&bih=666#imgrc=_">
+          <img src="http://static02.rupor.sampo.ru/38885/%D0%B2%D0%B0%D1%8B%D0%B2%D0%B0%D0%B2.jpg" />
+        </a>
+
+          <img src=""
+
+          <p><h2> Are you an AMATUBIE? [amature+noobie=amatubie]. Then prove that you're not 1 by getting these questions right. </h2></p>
+            <h2> Minecraft Trivia </h2>
+             <p><h3> Is the Creeper a failed version of the pig? </h3></p>
+           <form>
+              <div id="response"> </div>
+           	 <input type="radio" name="trivia" value="y"> Yes <br>
+           	 <input type="radio" name="trivia" value="dnk"> Do not know <br>
+             <input type="radio" name="trivia" value="p"> Possibly <br>
+             <input type="radio" name="trivia" value="n"> No <br>
+             <input type="button" id="submit" value="Click Here" onclick="answer()">
+            </form>
+
+               <m><h1> Crazy enough it's actually true. Notch was tierd at the time when doing the coding of the pig and did it wrong. And that was the first seen of the creeper </h1></m>
+
+            <g><h1> Hope you have learnt more about Minecraft. </h1></g>
+
+          <t><h1> AWESOMENESS </h1></t>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer> The website coder is unknown </footer>
+   </body>
